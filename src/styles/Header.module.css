@@ -1,0 +1,78 @@
+/* Header.module.css */
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+  
+  .headerScrolled {
+    background-color: #2d3748; /* bg-gray-800 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navLink:hover {
+    color: #f56565; /* Hover effect with red color */
+  }
+  
+  .hamburgerMenu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburgerMenu div {
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: white;
+    margin: 0.3rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    /* Make hamburger menu visible and hide navLinks */
+    .hamburgerMenu {
+      display: block;
+    }
+  
+    .navLinks {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 4rem; /* adjust according to header height */
+      right: 1rem;
+      background-color: #2d3748;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      width: 200px; /* Set width for mobile menu */
+    }
+  
+    .navLinks.active {
+      display: flex; /* Show menu when active */
+    }
+  
+    .navLink {
+      padding: 1rem;
+      text-align: center;
+      width: 100%; /* Ensure links are full-width */
+      text-decoration: none;
+    }
+  }
+  

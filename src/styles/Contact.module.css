@@ -1,0 +1,75 @@
+/* Global styles for the contact section */
+.contact-section {
+    background-color: #f8f9fa;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    font-family: 'Sans-serif', Arial, sans-serif;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .contact-title .highlight {
+    color: #b30000; /* Red color for 'C' */
+  }
+  
+  .contact-description {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    background-color: #1f2937;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-field {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    color: #e5e7eb;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #b30000;
+    outline: none;
+  }
+  
+  .form-submit-btn {
+    width: 100%;
+    padding: 1.25rem;
+    background-color: #b30000;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .form-submit-btn:hover {
+    background-color: #dc2626;
+  }
+  
